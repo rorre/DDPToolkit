@@ -19,6 +19,7 @@ See also: [LIT's Moss for DDP](https://github.com/asfiowilma/Moss-For-DDP)
 
 ## How
 
+- `pip install typer rich`
 - Download latest release DDPValidator [di sini](https://github.com/rorre/DDPValidator/releases/latest)
 - Taro executable di folder yang sama dengan `validator.py` (atau direktori PATH)
 - Buat config.json seperti sample di bawah
