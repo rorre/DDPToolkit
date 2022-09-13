@@ -1,7 +1,7 @@
 .vscode
-submissions/
+# submissions/
 DDPValidator*
-invalid/
+# invalid/
 config.json
 
 # Byte-compiled / optimized / DLL files
