@@ -1,6 +1,8 @@
 .vscode
 submissions/
 DDPValidator*
+invalid/
+config.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
