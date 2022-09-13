@@ -58,7 +58,7 @@ def run_submissions():
             continue
 
         console.print(f"Running for user [b]{metadata['name']}")
-        subprocess.run(["DDPValidator", py_path.parent, "-i"])
+        subprocess.run(["ddpvalidator", py_path.parent, "-i"])
 
         # console.input("Enter to continue...")
 
