@@ -23,6 +23,9 @@ with open("config.json", "r") as f:
 @app.command(name="filter")
 def filter_submissions():
     for path in submissions_dir.iterdir():
+        if path.name == ".gitkeep":
+            continue
+
         is_valid, reason, meta = check_folder(config, path)
         if not is_valid:
             console.print(f"[yellow]{path.name} is invalid due to {reason}")
@@ -37,6 +40,9 @@ def filter_submissions():
 @app.command(name="extract")
 def extract_submissions():
     for path in submissions_dir.iterdir():
+        if path.name == ".gitkeep":
+            continue
+
         for zip_path in path.glob("*.zip"):
             extract_zip(zip_path)
 
@@ -44,6 +50,9 @@ def extract_submissions():
 @app.command(name="run")
 def run_submissions():
     for path in submissions_dir.iterdir():
+        if path.name == ".gitkeep":
+            continue
+
         metadata = load_metadata(path)
         py_path = select_main(path)
 
