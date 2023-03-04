@@ -4,7 +4,7 @@ from rich.console import Console
 
 console = Console()
 FILE_RE = (
-    r"(?P<kelas>\w)_(?P<asdos>\w+)_(?P<npm>\d+)_(?P<name>.+)_[Ll]ab(?P<labnum>\d+)"
+    r"(?P<asdos>\w+)_(?P<kelas>\w)_(?P<npm>\d+)_(?P<name>.+)_[Ll]ab(?P<labnum>\d+)"
 )
 
 
